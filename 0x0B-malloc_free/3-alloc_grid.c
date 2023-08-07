@@ -1,3 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+/**
+ * alloc_grid - creates 2D array of ints
+ * @width: width of 2D array
+ * @height: height of 2D array
+ * Return: pointer to 2D array or NULL if failure
+ */
+int **alloc_grid(int width, int height)
+{
+	int **arr;
 	int i, j;
 
 	if (width < 1 || height < 1)
